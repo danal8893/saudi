@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Saudi National Day </title>
+    
+<style>
+    body{
+background-color: #b7d5ac;
+
+    }
+    label{
+        background-color: white;
+        color: green;
+    }
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: green;
+text-align: center;
+}
+select{
+color:white;
+background-color: green;
+
+
+
+}
+</style>
+
+</head>
+<body>
+<img src  ="WhatsApp Image 2023-09-08 at 4.03.35 PM (1).jpeg">
+<h1 style="font-size: xx-large;">Saudi National Day</h1>
+<p style="font-size: xx-large;color: white; background-color: green;">  Enter your birth year</p>
+<select id="mySelect">
+    <option value=".">.</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    <option value="2003">2003</option>
+    <option value="2004">2004</option>
+    <option value="2005">2005</option>
+    <option value="2006">2006</option>
+    <option value="2007">2007</option>
+    <option value="2008">2008</option>
+    <option value="2009">2009</option>
+    <option value="2010">2010</option>
+</select>
+
+<div id="outputDiv" style="display: none;"></div>
+
+<script>
+    var select  = document.getElementById("mySelect");
+    var outputDiv = document.getElementById("outputDiv");
+
+    select.addEventListener("change", function () {
+        var selectedOption = select.value;
+        if (selectedOption === "2000") {
+            outputDiv.innerHTML =" منح مائة منحة دراسية للمسلمين ";
+        } 
+        
+        else if (selectedOption === "2001") {
+            outputDiv.innerHTML = "DSL:بدء خدمة الاتصالات السريعة ";
+        }
+        
+        else if (selectedOption === "2002") {
+            outputDiv.innerHTML ="اطلاق القمر الاصطناعي السعودي الثالث  ";
+        }
+        
+        else if (selectedOption === "2003") {
+            outputDiv.innerHTML = " افتتاح معرض تقنية المعلومات السادس في الجبيل الصناعية "
+        }
+        
+        else if (selectedOption === "2004") {
+            outputDiv.innerHTML = "You selected Option 3."
+        } 
+
+        else if (selectedOption === "2005") {
+            outputDiv.innerHTML = "You selected Option 3."
+        } 
+
+        else if (selectedOption === "2006") {
+            outputDiv.innerHTML = "You selected Option 3."
+        } 
+
+        else if (selectedOption === "2007") {
+            outputDiv.innerHTML = "You selected Option 3."
+        } 
+
+        else if (selectedOption === "2008") {
+            outputDiv.innerHTML = "You selected Option 3."
+        } 
+
+        else if (selectedOption === "2009") {
+            outputDiv.innerHTML  = "You selected Option 3."
+        } 
+
+        else if (selectedOption === "2010") {
+            outputDiv.innerHTML = "You selected Option 3."
+        } 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        else {
+                outputDiv.innerHTML = "";
+            }
+
+            if (selectedOption !== "") {
+                outputDiv.style.display = "block";
+            } else {
+                outputDiv.style.display = "none";
+            }
+        });
+</script>
+
+
+</body>
+
+</html>
